@@ -30,3 +30,9 @@ Route::get('updateProject', [ProjectController::class,'updateProject']);
 Route::get('executionProject', [ProjectController::class,'executionProject']);
 
 Route::get('nameInactivosProject', [ProjectController::class,'nameInactivosProject']);
+
+Route::get('deleteProject', [ProjectController::class,'deleteProject']);
+
+
+
+

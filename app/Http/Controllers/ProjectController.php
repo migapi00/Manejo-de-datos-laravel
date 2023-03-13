@@ -67,4 +67,9 @@ class ProjectController extends Controller
                 ->update(['name' => 'Proyecto Piloto']);
                 return "Trabajo Hecho";
         }
+
+        public function deleteProject() {
+            $project = Project::where('project_id', '>', 15)->delete();
+            return "Registros eliminados";
+        }
 }
